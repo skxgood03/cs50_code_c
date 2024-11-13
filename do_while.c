@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int do_while_fun(string prompt);
+int do_while_fun(string *prompt);
 
 int main()
 {
@@ -9,7 +9,7 @@ int main()
     printf("%i\n", i);
 }
 
-int do_while_fun(string prompt)
+int do_while_fun(string *prompt)
 {
     int n;
     do
