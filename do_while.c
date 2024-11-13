@@ -5,7 +5,8 @@ int do_while_fun(string prompt);
 
 int main()
 {
-    do_while_fun("请输入一个数字");
+   int i =  do_while_fun("请输入一个数字: ");
+   printf("%i\n",i);
 }
 
 int ddo_while_fun(string prompt){
