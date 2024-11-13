@@ -2,8 +2,8 @@
 #include<stdio.h>
 
 int main(){
-    int x =  get_float("x:");
-    int y =  get_float("y:");
+    float x =  get_float("x:");
+    float y =  get_float("y:");
 
     printf("x+y=%i\n",x+y);
     printf("x-y=%i\n",x-y);
