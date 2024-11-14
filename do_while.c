@@ -14,7 +14,7 @@ int do_while_fun(const char *prompt)
     int n;
     do
     {
-        n = get_int(prompt);
+        n = get_int("%s",prompt);
     }
     while (n < 1);
     return n;
