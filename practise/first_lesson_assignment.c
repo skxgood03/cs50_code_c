@@ -9,7 +9,7 @@ int main(){
     float tax_amount = tip*percent+tip;
     float tipping = tax_amount*tip_percent;
     float bill_per_person = (tax_amount+tipping)/2;
-    printf("You will owe $%.2f each!",bill_per_person);
+    printf("You will owe $%.2f each!\n",bill_per_person);
     return 0;
 
 }
