@@ -17,7 +17,7 @@ int main(){
 
 bool prime(int i){
     if(i==1){
-        return False;
+        return false;
     }
     for(int u=0; u<i; u++){
         if (n % i == 0){
