@@ -19,7 +19,7 @@ bool prime(int i){
         return false;
     }
     for(int u=2; u<i; u++){
-        if (u % i == 0){
+        if (i % u == 0){
              type= false;
         }else{
             type= true;
