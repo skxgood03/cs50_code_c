@@ -13,5 +13,6 @@ int main(void)
 }
 
 int 25many(int n){
+    int num = 0;
     
 }
