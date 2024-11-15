@@ -23,11 +23,7 @@ bool prime(int i){
     }
     float y = 0.0
     for(int u=2; u<i; u++){
-        if (i % u == 0){
-             type= false;
-        }else{
-            type= true;
-        }
+        y = 
     }
     return type;
 
