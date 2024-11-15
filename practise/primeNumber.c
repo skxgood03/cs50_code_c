@@ -14,9 +14,12 @@ int main(){
 }
 
 bool prime(int i){
-    bool type;
+    // bool type;
     if(i==1){
         return false;
+    }
+    if(i==2){
+        return true;
     }
     for(int u=2; u<i; u++){
         if (i % u == 0){
