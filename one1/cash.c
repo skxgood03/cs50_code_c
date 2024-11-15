@@ -10,7 +10,7 @@ int main(void)
         n = get_int("请输入需要找零的金额：");
     }
     while (n < 0);
-    printf("%i", calculate_quarters(n));
+    printf("%i\n", calculate_quarters(n));
 }
 
 int calculate_quarters(int n)
