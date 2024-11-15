@@ -21,7 +21,9 @@ bool prime(int i){
     }
     for(int u=0; u<i; u++){
         if (n % i == 0){
-             return False;
+             return false;
+        }else{
+            return true;
         }
 
     }
