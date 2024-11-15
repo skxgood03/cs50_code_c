@@ -6,9 +6,7 @@ int main(){
     int min  = get_int("请输入最小数：");
     int max  = get_int("请输入最大数：");
     for(int i = min; i<=max;i++ ){
-
-        bool over= prime(i);
-        if(over){
+        if(prime(i)){
             printf("%i",i);
         }
     }
@@ -27,6 +25,7 @@ bool prime(int i){
             type= true;
         }
     }
+    return type;
 
 
 }
