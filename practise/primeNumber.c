@@ -16,14 +16,15 @@ int main(){
 }
 
 bool prime(int i){
+    bool type;
     if(i==1){
         return false;
     }
     for(int u=0; u<i; u++){
         if (u % i == 0){
-             return false;
+             type= false;
         }else{
-            return true;
+            type= true;
         }
     }
 
