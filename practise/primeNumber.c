@@ -20,12 +20,13 @@ bool prime(int i){
         return false;
     }
     for(int u=0; u<i; u++){
-        if (n % i == 0){
+        if (u % i == 0){
              return false;
         }else{
             return true;
         }
-
     }
+
+
 }
 
