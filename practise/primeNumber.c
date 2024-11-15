@@ -14,7 +14,7 @@ int main(){
 }
 
 bool prime(int i){
-    // bool type;
+    bool type;
     if(i==1){
         return false;
     }
@@ -23,9 +23,15 @@ bool prime(int i){
     }
     float y = 0.0
     for(int u=2; u<i; u++){
-        y = 
+
+        y += i%u;
     }
-    return type;
+    if (y==0){
+        return false;
+    }
+    else{
+        return true;
+    }
 
 
 }
