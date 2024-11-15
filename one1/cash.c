@@ -17,6 +17,7 @@ int calculate_quarters(int n)
 {
     int num = 0;
     int many = n;
+    printf("n:%i,many:%i",n,many);
 
     while (many < 25)
     {
