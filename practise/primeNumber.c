@@ -21,7 +21,7 @@ bool prime(int i){
         return true;
     }
     float y = 0.0;
-    for(int u=2; u<i; u++){
+    for(int u=3; u<i; u++){
 
         y += i%u;
     }
