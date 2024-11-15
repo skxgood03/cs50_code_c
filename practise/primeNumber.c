@@ -18,7 +18,7 @@ bool prime(int i){
     if(i==1){
         return false;
     }
-    for(int u=0; u<i; u++){
+    for(int u=2; u<i; u++){
         if (u % i == 0){
              type= false;
         }else{
