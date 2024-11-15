@@ -1,12 +1,11 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int calculate_quarters(int n,int i);
+int calculate_quarters(int n, int i);
 int main(void)
 {
     int n;
     int frequency;
-    int num, many;
     do
     {
         n = get_int("请输入需要找零的金额：");
@@ -14,21 +13,12 @@ int main(void)
     while (n < 0);
     if (n >= 25)
     {
-        num, many = calculate_quarters(n, 25);
+        frequency = calculate_quarters(n, 25);
     }
-    printf("%i还有%i\n",num,many);
-
-    // }else if(n>=10<25){
-    //     frequency +=  calculate_quarters(n,10);
-    // }else if(n>=5<10){
-    //     frequency +=  calculate_quarters(n,5);
-    // }
-    // else{
-    //     frequency +=  calculate_quarters(n,1);
-    // }
+    printf("%i\n", frequency);
 }
 
-int calculate_quarters(int n,int i)
+int calculate_quarters(int n, int i)
 {
     int num = 0;
     int many = n;
@@ -37,5 +27,29 @@ int calculate_quarters(int n,int i)
         many = many - i;
         num++;
     }
-    return num,many;
+    if (n >= 10)
+    {
+        while (many >= 10)
+        {
+            many = many - 10;
+            num++;
+        }
+    }
+    else if (n >= 5 < 10)
+    {
+        while (many >= 5)
+        {
+            many = many - 5;
+            num++;
+        }
+    }
+    else
+    {
+        while (many >= 1)
+        {
+            many = many - 1;
+            num++;
+        }
+    }
+    return num;
 }
