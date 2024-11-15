@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int 25many(int n);
+int calculate_quarters(int n);
 int main(void)
 {
     int n;
@@ -10,10 +10,10 @@ int main(void)
         n = get_int("请输入需要找零的金额：");
     }
     while (n < 0);
-    printf("%i", 25many(n))
+    printf("%i", calculate_quarters(n));
 }
 
-int 25many(int n)
+int calculate_quarters(int n)
 {
     int num = 0;
     int many = n;
@@ -24,5 +24,5 @@ int 25many(int n)
         many = many - 25;
         num++;
     }
-    return num
+    return num;
 }
