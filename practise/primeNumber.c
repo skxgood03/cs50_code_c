@@ -7,10 +7,12 @@ int main(){
     for(int i = min; i<=max;i++ ){
         printf("%i",i);
     }
+
 }
 
 prime(int i){
-    
+    for(int u=0; u<i; u++){
+        
+    }
 }
-5
-1/2 2/2 3/3 4/2
+
