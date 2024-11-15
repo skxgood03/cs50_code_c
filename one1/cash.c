@@ -16,7 +16,7 @@ int main(void)
     {
         num, many = calculate_quarters(n, 25);
     }
-    printf("%i还有%i\n,num,many");
+    printf("%i还有%i\n",num,many);
 
     // }else if(n>=10<25){
     //     frequency +=  calculate_quarters(n,10);
@@ -37,5 +37,5 @@ int calculate_quarters(int n,int i)
         many = many - i;
         num++;
     }
-    return num, many;
+    return num,many;
 }
