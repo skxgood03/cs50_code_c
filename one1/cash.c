@@ -20,7 +20,6 @@ int calculate_quarters(int n)
 
     while (many < 25)
     {
-
         many = many - 25;
         num++;
     }
