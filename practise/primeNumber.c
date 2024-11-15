@@ -14,14 +14,13 @@ int main(){
 }
 
 bool prime(int i){
-    bool type;
     if(i==1){
         return false;
     }
     if(i==2){
         return true;
     }
-    float y = 0.0
+    float y = 0.0;
     for(int u=2; u<i; u++){
 
         y += i%u;
