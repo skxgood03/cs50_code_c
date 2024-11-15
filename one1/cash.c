@@ -34,9 +34,9 @@ int calculate_quarters(int n)
             num++;
         }
     }
-    else if (many >= 5 < 10)
+    if (many >= 5 < 10)
     {
-        while (many >= 5)
+        while (many >= 5 < 10)
         {
             many = many - 5;
             num++;
@@ -44,7 +44,7 @@ int calculate_quarters(int n)
     }
     else
     {
-        while (many >= 1)
+        while (many >= 1 < 5)
         {
             many = many - 1;
             num++;
