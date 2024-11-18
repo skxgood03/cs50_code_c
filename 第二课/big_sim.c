@@ -8,6 +8,7 @@ int main()
     {
         if(s[i]>='a' && s[i]<='z')
         {
+            //ASCII 值差 大小写值差为32
             printf("%c",s[i] - ('a' - 'A'));
         }
         else
