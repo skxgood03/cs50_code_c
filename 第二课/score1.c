@@ -5,7 +5,7 @@ const int COUNT = 3;
 void charg(int score);
 int main()
 {
-    int scort[COUNT];
+    int scort[COUNT]; //创建一个大小为count的数组
     for(int i=0; i<COUNT; i++)
     {
         scort[i] = get_int("输出成绩%i",i+1);
