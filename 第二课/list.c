@@ -1,8 +1,8 @@
 #include<cs50.h>
 #include<stdio.h>
 
-const int COUNT = 3
-
+const int COUNT = 3;
+void charg(score);
 int main()
 {
     int scort[COUNT];
@@ -13,10 +13,13 @@ int main()
     for(int i=0; i<COUNT; i++)
     {
         printf("成绩%i是",i+1);
-        charg(scort[i])
+        charg(scort[i]);
     }
 
 }
-charg(scort[i]){
-
+void charg(score){
+    for(int i=0;i<score; i++){
+        printf("#");
+    }
+    printf("\n");
 }
