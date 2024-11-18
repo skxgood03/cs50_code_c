@@ -2,7 +2,7 @@
 #include<stdio.h>
 
 const int COUNT = 3;
-void charg(score);
+void charg(int score);
 int main()
 {
     int scort[COUNT];
@@ -17,7 +17,7 @@ int main()
     }
 
 }
-void charg(score){
+void charg(int score){
     for(int i=0;i<score; i++){
         printf("#");
     }
