@@ -17,3 +17,6 @@ int main()
     }
 
 }
+charg(scort[i]){
+
+}
