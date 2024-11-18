@@ -8,7 +8,7 @@ int main()
     int count = strlen(s);
     for (int i = 0; i < count; i++)
     {
-        printf("%s\n", s[i]);
+        printf("%c\n", s[i]);
     }
 
 }
