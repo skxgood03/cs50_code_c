@@ -2,11 +2,12 @@
 #include <stdio.h>
 
 int main(int argc,string argv[]){
+    printf("argc是%i，argv0是%s,argv1是%s",argc,argv[0],argv[1]);
     if(argc==2){
-        printf("hello,%s",argv[1]);
+        printf("hello,%s\n",argv[1]);
     }
     else{
-        print("hello,word");
+        printf("hello,word\n");
     }
 }
 
