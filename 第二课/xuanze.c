@@ -14,10 +14,10 @@ int main()
             {
                 min = j;
             }
-            int tmpe = arrt[min];
-            arrt[min] = arrt[j];
-            arrt[j] = tmpe;
         }
+        int tmpe = arrt[min];
+        arrt[min] = arrt[i];
+        arrt[i] = tmpe;
     }
     printf("整体数组：");
     for (int i = 0; i < length; i++)
