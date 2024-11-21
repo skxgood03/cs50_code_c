@@ -21,6 +21,7 @@ int main(){
         for(int i=0;i<length; i++){
             printf("%i",arrt[i]);
         }
+        printf("\n");
 
     }
 }
