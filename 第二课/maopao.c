@@ -8,7 +8,7 @@ int main(){
     if (length>0){
 
         for(int i=0;i<length; i++){
-            for(int j=0;j<j-i-1;j++){
+            for(int j=0;j<length-i-1;j++){
                 if (arrt[j]>arrt[j+1]){
                     // arrt[j],arrt[j+1]=arrt[j+1],arrt[j]
                     int tmpe = arrt[j];
