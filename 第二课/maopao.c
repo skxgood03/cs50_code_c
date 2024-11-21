@@ -13,7 +13,10 @@ int main(int arrt[]){
                 }
             }
         }
+        printf("整体数组：")
+        for(int i=0;i<length; i++){
+            print("%i",arrt[i])
+        }
 
     }
-    printf()
 }
