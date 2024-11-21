@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 
-int main(int arrt[]){
+int main(int argc,int arrt[]){
     int length = sizeof(arrt) / sizeof(arrt[0]);
     if (length>0){
 
