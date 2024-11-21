@@ -3,5 +3,12 @@
 
 
 int main(int arrt[]){
-    
+    int length = sizeof(arrt) / sizeof(arrt[0]);
+    if (length>0){
+
+        for(int i=0;i<length; i++){
+            for(){}
+        }
+
+    }
 }
