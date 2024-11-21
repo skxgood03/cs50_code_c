@@ -7,15 +7,18 @@ int main(int arrt[]){
     if (length>0){
 
         for(int i=0;i<length; i++){
-            for(int j=0;j==j-i-1;j++){
-                if (arrt[j]>arr[j+1]){
-                    arrt[j],arrt[j+1]=arrt[j+1],arrt[j]
+            for(int j=0;j<j-i-1;j++){
+                if (arrt[j]>arrt[j+1]){
+                    // arrt[j],arrt[j+1]=arrt[j+1],arrt[j]
+                    int tmpe = arrt[j];
+                    arrt[j] = arrt[j+1];
+                    arrt[j+1] = tmpe;
                 }
             }
         }
-        printf("整体数组：")
+        printf("整体数组：");
         for(int i=0;i<length; i++){
-            print("%i",arrt[i])
+            print("%i",arrt[i]);
         }
 
     }
