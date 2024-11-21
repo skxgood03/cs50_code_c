@@ -7,8 +7,13 @@ int main(int arrt[]){
     if (length>0){
 
         for(int i=0;i<length; i++){
-            for(int j=0;i<j){}
+            for(int j=0;j==j-i-1;j++){
+                if (arrt[j]>arr[j+1]){
+                    arrt[j],arrt[j+1]=arrt[j+1],arrt[j]
+                }
+            }
         }
 
     }
+    printf()
 }
