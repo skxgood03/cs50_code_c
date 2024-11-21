@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 
-int main(int argc,int arrt[]){
+int main(){
+    int arrt[] = {3,4,6,8,0};
     int length = sizeof(arrt) / sizeof(arrt[0]);
     if (length>0){
 
@@ -18,7 +19,7 @@ int main(int argc,int arrt[]){
         }
         printf("整体数组：");
         for(int i=0;i<length; i++){
-            print("%i",arrt[i]);
+            printf("%i",arrt[i]);
         }
 
     }
