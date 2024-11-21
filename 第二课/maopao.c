@@ -7,7 +7,7 @@ int main(int arrt[]){
     if (length>0){
 
         for(int i=0;i<length; i++){
-            for(){}
+            for(int j=0;i<j){}
         }
 
     }
