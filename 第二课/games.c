@@ -32,6 +32,9 @@ int compute_score(string word)
     for (int i = 0, len = strlen(word); i < len; i++)
     {
         if (isupper(word[i]))
+        // 通过减去基字符（在这里是字母 A），将字符映射到一个从0开始的索引，从而能够方便地访问相应的数据。如 word[i]=H
+        // 则 H的ASCII 码值是 72  A 的 ASCII 码值是 65 72-65=7 正好对应列表的第七位 POINTS[7] 分数为4
+        // H 也正好是第七位 ABCDEFH...
         {
             score += POINTS[word[i] - 'A'];
         }
