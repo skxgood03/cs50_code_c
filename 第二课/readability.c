@@ -23,11 +23,15 @@ int lenght_text(string text){
 int lenght_dc(string text){
 
     int len_dc = 1;
-
+    int in_word= 0;
     for(int i=0,len = strlen(text);i<len;i++){
 
         if(text[i]==' '){
             len_dc ++;
+            if(!in_word){
+                len_dc ++;
+                in_word=1;
+            }
         }
 
     }
