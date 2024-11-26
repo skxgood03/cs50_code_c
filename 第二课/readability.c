@@ -29,7 +29,7 @@ int lenght_dc(string text){
         }
     }
     int len = strlen(text);
-    if(len_dc==0 ||len==0){
+    if(len_dc==0 &&len==0){
         len_dc = 0;
     }else{
         len_dc = 1;
