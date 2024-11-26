@@ -8,7 +8,7 @@ int main(void)
 {
     string text = get_string("请输入文本：");
     int len = lenght_text(text);
-    printf("文本中的字母数：%s\n",len);
+    printf("文本中的字母数：%i\n",len);
 
 }
 
