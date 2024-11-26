@@ -24,20 +24,12 @@ int lenght_dc(string text){
 
     int len_dc = 1;
     int in_word= 0;
-    int num_sentences=0;
     for(int i=0,len = strlen(text);i<len;i++){
 
-        if (isalpha(text[i])) {  // 是字母
-
-            // 如果这是一个字母且之前未在单词中，意味着新单词的开始
-            if (!in_word) {
-                len_dc++;
-                in_word = 1;  // 进入单词状态
-            }
-        } else {
-            in_word = 0;  // 离开单词状态
-            if (text[i] == '.' || text[i] == '!' || text[i] == '?') {  // 是句子的结束标志
-                num_sentences++;
+        if(text[i]==' '){
+            if(!in_word){
+                len_dc ++;
+                in_word=1;
             }
         }
 
