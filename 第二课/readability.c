@@ -26,7 +26,7 @@ int lenght_dc(string text){
 
     for(int i=0,len = strlen(text);i<len;i++){
 
-        if(isspace(text[i])){
+        if(text[i]==' '){
             len_dc ++;
         }
 
