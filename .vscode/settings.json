@@ -3,6 +3,7 @@
     "files.associations": {
         "algorithm": "c",
         "stdio.h": "c",
-        "string.h": "c"
+        "string.h": "c",
+        "random": "c"
     }
 }

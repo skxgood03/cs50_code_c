@@ -24,15 +24,15 @@ int lenght_dc(string text){
 
     int len_dc = 0;
     for(int i=0,len = strlen(text);i<len;i++){
-        if(text[i]==""){
-            len_dc ++
+        if(isspace(text[i])){
+            len_dc ++;
         }
     }
     int len = strlen(text);
     if(len_dc==0 ||len==0){
-        len_dc = 0
+        len_dc = 0;
     }else{
-        len_dc = 1
+        len_dc = 1;
     }
     return len_dc;
 }
