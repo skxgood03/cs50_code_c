@@ -23,13 +23,11 @@ int lenght_text(string text){
 int lenght_dc(string text){
 
     int len_dc = 1;
-    char *ord_text;
+    string ord_text;
     for(int i=0,len = strlen(text);i<len;i++){
 
         if(isspace(text[i])){
-            if (!isspace(text[i])){
-                len_dc ++;
-            }
+            len_dc ++;
         }
         ord_text=text[i];
     }
