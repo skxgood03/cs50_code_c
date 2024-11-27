@@ -13,8 +13,7 @@ int main(void)
     int len_jz = lenght_jz(text);
     printf("文本中的字母数：%i\n",len);
     printf("文本中的单词数：%i\n",len_dc);
-
-
+    printf("文本中的句子：%i\n",len_jz);
 }
 
 int lenght_text(string text){
