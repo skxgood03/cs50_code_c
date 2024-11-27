@@ -47,8 +47,24 @@ int lenght_text(string text)
         printf("文本中没有找到单词。\n");
         return 1;
     }
-    printf("文本中的字母数：%i\n", num_letters);
-    printf("文本中的单词数：%i\n", num_words);
-    printf("文本中的句子数：%i\n", num_sentences);
-    return num_letters;
+    // 计算L和S
+    float L = ((float)num_letters / num_words) * 100;
+    float S = ((float)num_sentences / num_words) * 100;
+
+    // 计算Coleman-Liau指数
+    float index = 0.0588 * L - 0.296 * S - 15.8;
+
+    // 四舍五入到最接近的整数
+    int grade_level = (int)(index + 0.5);
+    
+    // 打印年级水平
+    if (grade_level < 1) {
+        printf("大约阅读水平：Before Grade 1\n");
+    } else if (grade_level >= 16) {
+        printf("大约阅读水平：Grade 16+\n");
+    } else {
+        printf("大约阅读水平：Grade %d\n", grade_level);
+    }
+
+    return 0;
 }
