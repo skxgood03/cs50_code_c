@@ -79,7 +79,7 @@ CS50 是哈佛大学著名的计算机科学入门课程，涵盖了计算机科
 A: 直接克隆本项目到本地，并根据需要阅读对应章节即可。
 
 ```sh
-git clone https://github.com/yourusername/cs50-notes.git
+git clone https://github.com/skxgood03/cs50_code_c.git
 ```
 
 **Q: 我可以贡献我的笔记吗？**
