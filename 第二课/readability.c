@@ -42,10 +42,15 @@ int lenght_jz(string text){
     int len_jz = 1;
     int len = strlen(text);
     for(int i=0;i<len;i++){
+        if (isalpha(text[i])){
+
+        }else{
 
         if(text[i]=='!' ||text[i]=='.'|| text[i]=='?' ){
             len_jz ++;
         }
+        }
+
     }
     if(len==0){
         len_jz = 0;
