@@ -10,15 +10,33 @@ int main(void)
 {
     string text = get_string("请输入文本：");
     int len = lenght_text(text);
-    int len_dc = lenght_dc(text);
-    int len_jz = lenght_jz(text);
+
     printf("文本中的字母数：%i\n", len);
 }
 
 int lenght_text(string text)
 {
-    int len = strlen(text);
-    return len;
+// 初始化计数器
+    int num_letters = 0;
+    int num_words = 0;
+    int num_sentences = 0;
+
+    // 标记是否在单词中
+    int in_word = 0;
+    for (int i = 0,n = strlen(text); i < len; i++){
+        if (isalpha(text[i]))
+        {
+            num_letters ++;
+            if (!in_word) {
+                num_words++;
+                in_word = 1;  // 进入单词状态
+            }else {
+            in_word = 0;  // 离开单词状态
+            if (text[i] == '.' || text[i] == '!' || text[i] == '?') {  // 是句子的结束标志
+                num_sentences++;
+            }
+        }
+    }
 }
 
 int lenght_dc(string text)
