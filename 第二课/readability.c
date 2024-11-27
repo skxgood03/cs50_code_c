@@ -47,4 +47,5 @@ int lenght_text(string text)
     printf("文本中的字母数：%i\n", num_letters);
     printf("文本中的单词数：%i\n", num_words);
     printf("文本中的句子数：%i\n", num_sentences);
+    return num_letters;
 }
