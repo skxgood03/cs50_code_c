@@ -28,7 +28,7 @@ int lenght_dc(string text){
     int len = strlen(text);
     for(int i=0;i<len;i++){
 
-        if(text[i]==' '){
+        if(text[i]==' ' ){
             len_dc ++;
         }
     }
