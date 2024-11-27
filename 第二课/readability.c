@@ -8,23 +8,19 @@ int lenght_dc(string text);
 int main(void)
 {
     string text = get_string("请输入文本：");
-    int len = lenght_text(text);
     int len_dc = lenght_dc(text);
     printf("文本中的字母数：%i\n",len);
     printf("文本中的单词数：%i\n",len_dc);
 
 }
 
-int lenght_text(string text){
-    int len = strlen(text);
-    return len;
-}
 
 int lenght_dc(string text){
 
     int len_dc = 1;
     int in_word= 0;
-    for(int i=0,len = strlen(text);i<len;i++){
+    int len = strlen(text);
+    for(int i=0;i<len;i++){
 
         if(text[i]==' '){
             if(!in_word){
