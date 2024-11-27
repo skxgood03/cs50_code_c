@@ -5,6 +5,7 @@
 #include <string.h>
 int lenght_text(string text);
 int lenght_dc(string text);
+int lenght_jz(string text);
 int main(void)
 {
     string text = get_string("请输入文本：");
@@ -42,7 +43,7 @@ int lenght_jz(string text){
     int len = strlen(text);
     for(int i=0;i<len;i++){
 
-        if(text[i]=="!" ||text[i]=="." text[i]=="?" ){
+        if(text[i]=='!' ||text[i]=='.' text[i]=='?' ){
             len_jz ++;
         }
     }
